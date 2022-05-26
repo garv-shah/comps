@@ -1,0 +1,8 @@
+addin = open("addin.txt", "r")
+addout = open("addout.txt", "w")
+input = addin.read()
+input = input.split(' ')
+input = str(int(input[0]) + int(input[1]))
+addout.write(input)
+addin.close()
+addout.close()
